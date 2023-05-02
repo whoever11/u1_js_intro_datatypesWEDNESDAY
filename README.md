@@ -17,26 +17,7 @@
 5. Review Questions
 6. Further Study
 
-## Setup
 
-There won't be much code written during this introductory  walk-through on JavaScript.
-
-However, I'll be using Chrome's Developer Tools to experiment and demonstrate some code - feel free to join me or simply watch and take notes, etc....
-
-To open the DevTools in Chrome, press:
-- `option + command + J` (macOS)
-- `shift + CTRL + J` (Windows/Linux)
-
-Within the **console** tab we can enter JS code and have it immediately evaluated.
-
-#### Turning a Browser Tab Into a Notepad
-
-If you'd like to turn your browser into a convenient notepad, open a tab and copy/paste this snippet into the address bar:
-    
-```
-data:text/html, <html contenteditable style="font-family: 'Lucida Console', Monaco">
-```
-Bookmark it for future use!
 
 ## 1. What are Computer Programs?
 
@@ -256,7 +237,35 @@ A **string** represents textual data with zero or more characters wrapped by sin
 
 Note that the `typeof` operator itself always returns a string describing the data type.
 
-> ES2015 Note: In addition to using single and double quotes to delimit a string, ES2015 adds a third way by using the backtick character to create what's called a _template literal_.  We'll learn more about _template literals_ soon.
+> ES2015 Note: In addition to using single and double quotes to delimit a string, ES2015 adds a third way by using the backtick character to create what's called a _template literal_.  
+
+Writing out full sentences and messages is much easier using this method
+
+We can do something like
+```js
+let name = "Jeremy"
+let age = 36
+console.log('hello my name is ' + name + " and I am " + age + "years old") 
+```
+
+Or we can do 
+```js
+let name = "Jeremy"
+let age = 36
+console.log(`hello my name is ${name} and I am ${age} years old`)
+```
+
+See how much more elegant that is!
+
+We can also can do JS Functionality inside of these literal brackets!
+
+```js
+let name = "Jeremy"
+let age = 36
+console.log(`hello my name is ${name} and next year I will be ${age++} years old`) 
+```
+
+that ++ after age is one way we add 1 to an extising number. Lets talk about numbers next!
 
 #### number
 
