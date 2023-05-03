@@ -27,7 +27,7 @@ As of 2022, Javascript is the only language that can work on both Front End / Cl
 
 **We do not expect you to to be the Michael Jordan of Javascript in the next 24 hours. We *do* expect you to dedicate time each day to practicing, and to take note of how you are progressing with each new thing that we learn!**
 
-Lets begin by explaining the different ways of working with data in Javascript
+Lets begin by explaining the different ways of working with data in Javascript. Lets hop into the Unit 1 / Week 1 / Tuesday directory we've created, and create a file called 'script.js'. We'll be using this file through the day.
 
 
 ### JavaScript Data Types
@@ -42,8 +42,45 @@ The latest ECMAScript standard defines seven data types:
   - Object
 
 
+### Console.log(), the Dev's best friend
+
+For the first parts of our JS lessons, we will not be rendering any data onto our screen (we'll do that later this week with the DOM lesson, don't worry about that!), instead we will be returning our data in our terminal using an amazing tool called console.log(). This will allow us to Log data into our Console. Don't we just love semantic names!
+
+We can enter this code into our terminal, make sure to save your file, and then run the file in the terminal by running 'node script.js'
+
+Lets enter these five peices of code in together, one at a time, and see what each output in our terminal looks like:
+
+```js
+console.log('hello world!')
+```
+
+```js
+console.log(hello world)
+```
+
+```js
+console.log(10 - 5)
+```
+
+```js
+console.log('10 - 5')
+```
+```js
+console.log('10'- 5)
+```
+
+Notice how some of these work as expected, while others don't. This is because of how we are working with our different JS data types
 
 
+#### Commenting out code in JS
+
+For this lesson, and class as a whole, we'll want to write a lot of notes in our code. We can do this by entering // in front of our lines of code.
+
+Enter this into your code, you'll see that while it is in the file, it does not display on our output:
+
+```js
+//Working with the Number datatypes
+```
 
 ### The Number Data Type
 
@@ -61,7 +98,7 @@ In other languages, numbers are divided into two classes or objects:
    2.718, 3.14, .5, .25, etc
   ```
 
-All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript." And if that gives you a bit of a headache, that's alright. 
+All numbers in JavaScript are **"double-precision 64-bit format IEEE 754 values"** - read this as "There's really no such thing as an integer in JavaScript." And if that gives you a bit of a headache, that's alright. All that matters is that while there are technically a few different types of numbers, we'll be referring to them all as Numbers. But as we continue we'll see why these different types matter
 
 
 ![Math](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FBmmfETghGOPrW%2Fgiphy.gif&f=1&nofb=1)
