@@ -569,6 +569,31 @@ let count;
 
 ![Thumbs Up](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FXreQmk7ETCak0%2Fgiphy.gif&f=1&nofb=1)
 
+
+## Advanced Data Types
+Data types that can contain other variables and peices of data, which we will discuss more as we move forward
+
+### Arrays
+
+Arrays are lists of items that we are able to manipulate and store data with. They are defined by square brackets - [], with each item separated by a comma
+```js
+const cheeses = ['brie', 'edam', 'gouda', 'burrata']
+```
+
+### Objects
+
+Objects are complex data points that contain multiple key value pairs. They are defined by curly brackets - {}, with each value pair separated by a comma as well
+
+```js
+
+const user = {
+username: 'fakeuser123',
+password: 'password123!',
+id: 23425,
+active: false
+}
+
+```
 ## Lesson Recap
 In this lesson, we learned about what JavaScript is. We also learned about JavaScript data types and how to use some of them.
 
