@@ -594,6 +594,12 @@ active: false
 }
 
 ```
+
+Both arrays and objects are able to contain different datatypes within them (Strings, Numbers, Booleans, other nested Arrays and Objects), but with Arrays we prefer to use all the same datatype, and with Objects we are free to use as many different types as we'd like.
+
+We'll discuss these final two datatypes in future lessons!
+
+
 ## Lesson Recap
 In this lesson, we learned about what JavaScript is. We also learned about JavaScript data types and how to use some of them.
 
