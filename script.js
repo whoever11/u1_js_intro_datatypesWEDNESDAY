@@ -55,8 +55,8 @@
 //let firstFriend = friends[0]
 //console.log(firstFriend.length)
 //below is array methods fruits
-let fruits = [`apple`, `banana`, `orange`, `strawberry`, `kiwi`, `grapes`,
-`mango`, `pineapple`, `pear`] //array list practice
+//let fruits = [`apple`, `banana`, `orange`, `strawberry`, `kiwi`, `grapes`,
+//`mango`, `pineapple`, `pear`]//array list practice
 //console.log(fruits[fruits.length - 1]) //will show all the fruits in the array at the end fruit
 //console.log(fruits.toString())//will show all the fruits in the array as a string(line in order in terminal)
 //fruits.pop()//.pop()will remove the last fruit in the array
@@ -75,5 +75,148 @@ let fruits = [`apple`, `banana`, `orange`, `strawberry`, `kiwi`, `grapes`,
 //where we started, where we stop, and what we're doing
 
 
-fruits.splice(0,2,'dragonfruit', 'avacado' )//.splice() will remove orange and strawberry and add dragonfruit and avacado
-console.log(fruits)
+//fruits.splice(0,2,'dragonfruit', 'avacado' )//.splice() will remove orange and strawberry and add dragonfruit and avacado
+//console.log(fruits)
+
+//control Flow & Loops AFTERNOON CLASS WEDNESDAY JANUARY 17, 2024
+//let weather = "snowy"
+
+//if () {}//basic set up for if statements in javascript
+
+//if (weather == "snowy"){
+    //console.log("brr its cold")
+//}
+// = is for variables == is for comparison or to check if something is equal to something else
+//below is if else statment on voting (line 91-97)
+//let age = 10
+
+//if (age >=18) {
+    //console.log("you can vote")
+//} else {
+    //console.log("you cannot vote")
+//}
+
+//when working with out variables
+//we use single = to assign a value
+// to test a variable is == or === (triple equals)
+//the == checks value
+//the === checks value and type
+
+//const dayOfWeek = 'Monday';
+
+//if (dayOfWeek === 'Monday') {
+  //console.log('Its Monday, better get to class!');
+//} else if (dayOfWeek === 'Saturday') {
+ // console.log('Its Saturday, party on!');
+//} else {
+  //console.log(`Please enter another day!`);
+//}
+//=> Its Monday, better get to class!
+// const yourMoney = 100
+// const catPrice = 100
+//  if (yourMoney <=catPrice) {
+//      console.log("you cannot buy the cat")
+//  } else {
+//      console.log("you can buy the cat")
+//  }
+// const yourMoney = 100
+// const catPrice = 100
+// if (yourMoney >= catPrice) {
+//     console.log("you have just enough to buy a cat");
+// } else {
+//     console.log("you can't buy the cat");
+// }
+// const yourMoney = 200
+// const catPrice = 100
+// if (yourMoney >= catPrice){
+//     console.log("you can buy a cat and will have dollars left over");
+// }
+// else {
+//     console.log("you can't buy the cat");
+// }
+
+// TIME TO USE && || AND ! TO TEST multiple conditions
+
+// let age = 22
+
+// if (age > 20 && age <=13) {
+//     console.log('you are a teenager')
+// }
+
+// const dayOfWeek = 'Monday';
+
+// if (dayOfWeek === 'Monday' || dayOfWeek === 'Wednesday') {
+//     console.log(`It's ${dayOfWeek}, better get to class!`);
+// } else if (dayOfWeek === 'Tuesday' || dayOfWeek === 'Thursday' || dayOfWeek === 'Friday') {
+//     console.log(`Today is ${dayOfWeek}, no class tonight!`);
+// } else if (dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday') {
+//     console.log('It\'s the weekend!!');
+// } else {
+//     console.log('Please enter another day!');
+// }
+//=> It's Monday, better to get to class!
+
+// let age = 22
+// // Ternary Operator(cooler way to write code cleaner)
+// age > 18 ? console.log('you can vote') : console.log('you cant vote')
+
+// switch statement can be used for multiple branches based on === equality
+//ex below
+// const food = 'steak'
+// //if() {}(just showing compared to switch not needed for switch statement)
+// switch (food) {
+//     //case - what we are testing
+//     //action - what we are doing
+//     //break - stops the switch statement
+//     case 'chicken':
+//         console.log( 'Ill have the chicken marsala')
+//         break;
+//      case 'steak':
+//             console.log('ill have the steak, rare please')
+//             break;
+//     case 'vegetarian':
+//             console.log('ill have the risotto with mushrooms')
+//             break;
+//     default:
+//             console.log('please the valid entree')
+// }
+//LOOPS AFTERNOON LESSON
+//for loops(used most of the time)
+//while loops(harder to use)
+//if (){}(for which is for loop looks the same)
+//switch (){}
+//ex below
+//i ++ means we are going up each time by 1 
+// math.round means round to the nearest whole number
+
+// for (let i = 0; i <=10; i++) {
+//     console.log(`your total for your items is ${i *1.085}`)
+// }
+
+
+// const food = ['pizza', 'tacos', 'sushi', 'soup', 'salad', 'pasta']
+
+// for (let i = 0; i < food.length; i++){
+//     console.log(food[i])
+// }
+
+const wizards = [
+    {name: "Harry Potter", house: "Gryffindor"}, 
+    {name: "Lord Voldomort", house: "Slytherin"}, 
+    {name: "Cedric Diggory", house: "Hufflepuff"},
+    {name: "Luna Lovegood", house: "Ravenclaw"},  
+    {name: "Albus Dumbledor", house: "Gryffindor"}, 
+    {name: "Merlin", house: "Slytherin"}, 
+    {name: "Pomona Sprout", house: "Hufflepuff"}, 
+    {name: "Gilderoy Lockheart", house: "Ravenclaw"}, 
+    {name: "Ron Weasley", house: "Gryffindor"}, 
+    {name: "Severus Snape", house: "Slytherin"}, 
+    {name: "Nymphadora Tonks", house: "Hufflepuff"}, 
+    {name: "Padma Patil", house: "Ravenclaw"}, 
+    {name: "Hermoine Granger", house: "Gryffindor"} 
+   ]
+for(let i = 0; i < wizards.length; i++){
+    if(wizards[i].house === "Slytherin"){
+        console.log(wizards[i].name);
+    }
+}
